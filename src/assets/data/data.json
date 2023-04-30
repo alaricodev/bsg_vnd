@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "categoria": "Pães",
+    "foto": "001.jpeg",
+    "nome": "Pão de Abóbora",
+    "preco": "26,90",
+    "peso": "900g",
+    "descricao": "Pão de abóbora sem glúten: macio, úmido e saboroso. Feito com farinha sem glúten e purê de abóbora. Ótima opção para quem busca alimentos sem glúten.",
+    "descricaoLonga": "Pão de abóbora sem glúten: macio, úmido e saboroso. Feito com farinha sem glúten e purê de abóbora. Ótima opção para quem busca alimentos sem glúten."
+  },
+  {
+    "id": 2,
+    "categoria": "Pães",
+    "foto": "002.jpeg",
+    "nome": "Pão de batata doce com chia",
+    "preco": "26,90",
+    "peso": "900g",
+    "descricao": "Pão de batata doce com chia, sem glúten. Sabor levemente adocicado e rico em fibras. Ótima opção para dietas sem glúten e saudáveis.",
+    "descricaoLonga": "Pão de batata doce com chia, sem glúten. Sabor levemente adocicado e rico em fibras. Ótima opção para dietas sem glúten e saudáveis."
+  },
+  {
+    "id": 3,
+    "categoria": "Pães",
+    "foto": "003.jpeg",
+    "nome": "Pão Australiano",
+    "preco": "32,90",
+    "peso": "900g",
+    "descricao": "Pão Australiano: macio e saboroso, com mel e cacau em sua receita. Ideal para acompanhar refeições ou como lanche. Um clássico da culinária australiana.",
+    "descricaoLonga": "Pão Australiano: macio e saboroso, com mel e cacau em sua receita. Ideal para acompanhar refeições ou como lanche. Um clássico da culinária australiana."
+  },
+  {
+    "id": 4,
+    "categoria": "Pães",
+    "foto": "004.jpeg",
+    "nome": "Pão batata doce e ervas finas",
+    "preco": "26,90",
+    "peso": "900g",
+    "descricao": "Macio, saboroso e aromático. Feito com purê de batata doce e ervas finas. Ideal para acompanhar refeições ou como lanche saudável e nutritivo.",
+    "descricaoLonga": "Macio, saboroso e aromático. Feito com purê de batata doce e ervas finas. Ideal para acompanhar refeições ou como lanche saudável e nutritivo."
+  },
+  {
+    "id": 5,
+    "categoria": "Pães",
+    "foto": "005.jpeg",
+    "nome": "Pão multigrãos de biomassa",
+    "preco": "32,90",
+    "peso": "900g",
+    "descricao": "Saboroso e nutritivo, rico em fibras e nutrientes. Feito com biomassa de banana verde e uma variedade de grãos. Excelente opção para uma alimentação saudável.",
+    "descricaoLonga": "Saboroso e nutritivo, rico em fibras e nutrientes. Feito com biomassa de banana verde e uma variedade de grãos. Excelente opção para uma alimentação saudável."
+  },
+  {
+    "id": 6,
+    "categoria": "Pães",
+    "foto": "006.jpeg",
+    "nome": "Pão de tomate seco e azeitonas",
+    "preco": "32,90",
+    "peso": "900g",
+    "descricao": "Pão de Batata Doce com Tomate Seco, Azeitonas e Orégano: delicioso e sofisticado, com sabores mediterrâneos. Feito com purê de batata doce, tomate seco, azeitonas e orégano. Ótimo como acompanhamento ou para lanches especiais.",
+    "descricaoLonga": "Pão de Batata Doce com Tomate Seco, Azeitonas e Orégano: delicioso e sofisticado, com sabores mediterrâneos. Feito com purê de batata doce, tomate seco, azeitonas e orégano. Ótimo como acompanhamento ou para lanches especiais."
+  }
+]
