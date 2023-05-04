@@ -15,6 +15,17 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/carrinho",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "",
+        name: "carrCompra",
+        component: () => import("pages/carrinhoCompras.vue"),
+      },
+    ],
+  },
   // Always leave this as last one,
   // but you can also remove it
   {

@@ -6,29 +6,60 @@
           flat
           dense
           round
+          color="secondary"
           icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title> Bistrô sem Glúten </q-toolbar-title>
-        <q-space />
-        <div v-if="store.carrinhoItem">
-          <q-btn
-            dense
-            flat
-            icon="shopping_cart"
-            :label="`Finalizar ${this.store.carrinho.length} itens`"
+        <q-toolbar-title>
+          <q-img
+            src="../../public/logo_site_horinzontal.png"
+            style="height: 30px; max-width: 180px"
           />
+        </q-toolbar-title>
+        <div style="text-align: left; align-items: left">
+          <q-btn flat icon="search" />
         </div>
       </q-toolbar>
     </q-header>
-    <q-footer elevated v-if="store.carrinhoItem">
-      <q-bar class="bg-primary">
-        <q-btn dense flat icon="shopping_cart" label="Finalizar compra" />
+    <q-footer
+      v-if="store.carrinhoItem && !store.carrinhoAberto"
+      clickable
+      @click="goCarrinho()"
+    >
+      <q-bar class="bg-primary cursor-pointer">
+        <div class="cursor-pointer">
+          <div class="row">
+            <div class="q-ma-sm text-secondary">
+              {{ formataItens(store.totalItens) }}
+            </div>
+          </div>
+        </div>
         <q-space />
-        <q-btn dense flat icon="sell" label="02 itens" />
-        <q-btn dense flat icon="attach_money" class="gt-xs" label="R$ 68,00" />
+        <div class="cursor-pointer">
+          <div class="row">
+            <div class="q-ma-sm">Ir para o carrinho</div>
+          </div>
+        </div>
+        <q-space />
+        <div class="cursor-pointer">
+          <div class="row">
+            <div class="q-ma-sm text-secondary">
+              {{ forCurr.format(store.totalCarrinho) }}
+            </div>
+          </div>
+        </div>
+
+        <!-- <q-btn flat icon="shopping_cart" label="Finalizar compra" />
+        <q-space />
+        <q-btn flat icon="sell" :label="" />
+        <q-btn
+          flat
+          icon="attach_money"
+          class="gt-xs"
+          :label="forCurr.format(store.totalCarrinho)"
+        /> -->
       </q-bar>
     </q-footer>
 
@@ -80,10 +111,27 @@ export default defineComponent({
   },
 
   setup() {
-    const leftDrawerOpen = ref(false);
+    const leftDrawerOpen = ref(true);
     const store = useStore();
+    const forCurr = new Intl.NumberFormat("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+    });
+    function formataItens(valor) {
+      if (valor == 1) {
+        return `0${valor} ITEM`;
+      } else {
+        if (valor > 10) {
+          return `${valor} ITENS`;
+        } else {
+          return `0${valor} ITENS`;
+        }
+      }
+    }
 
     return {
+      formataItens,
+      forCurr,
       store,
       essentialLinks: linksList,
       leftDrawerOpen,
@@ -91,6 +139,15 @@ export default defineComponent({
         leftDrawerOpen.value = !leftDrawerOpen.value;
       },
     };
+  },
+  mounted() {
+    this.leftDrawerOpen = false;
+  },
+
+  methods: {
+    goCarrinho() {
+      this.$router.push("/carrinho");
+    },
   },
 });
 </script>

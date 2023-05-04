@@ -26,12 +26,29 @@
     </q-card>
   </q-dialog>
   <!-- Tela principal começa aqui -->
+
+  <div class="q-ma-sm row items-start" style="width: 100%">
+    <q-btn
+      flat
+      icon="arrow_back_ios"
+      style="width: 10%"
+      class="q-pa-sm"
+      @click="backIndex()"
+    />
+    <div
+      class="text-center q-pa-sm text-weight-regular text-h6 text-primary"
+      style="width: 90%"
+    >
+      DETALHES DO PRODUTO
+    </div>
+  </div>
+  <q-separator />
   <div
     class="q-pa-md row items-start q-gutter-md"
     style="justify-content: center; align-items: center"
   >
     <q-card class="my-card" flat bordered>
-      <q-img :src="srcImg" />
+      <q-img :src="srcImg" :ratio="1" />
 
       <q-card-section>
         <div class="text-overline text-primary">
@@ -76,7 +93,7 @@
         /> -->
       </q-card-actions>
 
-      <q-slide-transition>
+      <!-- <q-slide-transition>
         <div v-show="expanded">
           <q-separator />
           <q-card-section class="text-caption">
@@ -88,7 +105,7 @@
             />
           </q-card-section>
         </div>
-      </q-slide-transition>
+      </q-slide-transition> -->
     </q-card>
   </div>
 </template>
@@ -165,5 +182,12 @@ export default {
   padding-bottom: 1px; /* adiciona um espaçamento interno de 20 pixels na parte inferior */
   padding-left: 10px; /* adiciona um espaçamento interno de 10 pixels na parte esquerda */
   padding-right: 10px;
+}
+
+.topo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
 }
 </style>

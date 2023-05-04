@@ -5,9 +5,10 @@
     "foto": "001.jpeg",
     "nome": "Pão de Abóbora",
     "preco": "26,90",
-    "peso": "900g",
-    "descricao": "Pão de abóbora sem glúten: macio, úmido e saboroso. Feito com farinha sem glúten e purê de abóbora. Ótima opção para quem busca alimentos sem glúten.",
-    "descricaoLonga": "Pão de abóbora sem glúten: macio, úmido e saboroso. Feito com farinha sem glúten e purê de abóbora. Ótima opção para quem busca alimentos sem glúten."
+    "peso": "600g",
+    "descricao": "Pão de abóbora sem glúten: macio, úmido e saboroso, feito com  purê de abóbora. ",
+    "descricaoLonga": "Pão de abóbora sem glúten: macio, úmido e saboroso. Feito com farinha sem glúten e purê de abóbora. Ótima opção para quem busca alimentos sem glúten.",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
     "id": 2,
@@ -15,9 +16,10 @@
     "foto": "002.jpeg",
     "nome": "Pão de batata doce com chia",
     "preco": "26,90",
-    "peso": "900g",
-    "descricao": "Pão de batata doce com chia, sem glúten. Sabor levemente adocicado e rico em fibras. Ótima opção para dietas sem glúten e saudáveis.",
-    "descricaoLonga": "Pão de batata doce com chia, sem glúten. Sabor levemente adocicado e rico em fibras. Ótima opção para dietas sem glúten e saudáveis."
+    "peso": "600g",
+    "descricao": "Pão de batata doce com chia, rico em fibras e sabor levemente adocicado.",
+    "descricaoLonga": "Pão de batata doce com chia, sem glúten. Sabor levemente adocicado e rico em fibras. Ótima opção para dietas sem glúten e saudáveis.",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
     "id": 3,
@@ -25,9 +27,10 @@
     "foto": "003.jpeg",
     "nome": "Pão Australiano",
     "preco": "32,90",
-    "peso": "900g",
-    "descricao": "Pão Australiano: macio e saboroso, com mel e cacau em sua receita. Ideal para acompanhar refeições ou como lanche. Um clássico da culinária australiana.",
-    "descricaoLonga": "Pão Australiano: macio e saboroso, com mel e cacau em sua receita. Ideal para acompanhar refeições ou como lanche. Um clássico da culinária australiana."
+    "peso": "600g",
+    "descricao": "Pão Australiano: macio e saboroso, com mel e cacau. Saboroso e saudável.",
+    "descricaoLonga": "Pão Australiano: macio e saboroso, com mel e cacau em sua receita. Ideal para acompanhar refeições ou como lanche. Um clássico da culinária australiana.",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
     "id": 4,
@@ -35,9 +38,10 @@
     "foto": "004.jpeg",
     "nome": "Pão batata doce e ervas finas",
     "preco": "26,90",
-    "peso": "900g",
-    "descricao": "Macio, saboroso e aromático. Feito com purê de batata doce e ervas finas. Ideal para acompanhar refeições ou como lanche saudável e nutritivo.",
-    "descricaoLonga": "Macio, saboroso e aromático. Feito com purê de batata doce e ervas finas. Ideal para acompanhar refeições ou como lanche saudável e nutritivo."
+    "peso": "600g",
+    "descricao": "Feito com purê de batata doce e ervas finas. Macio, saboroso e aromático.",
+    "descricaoLonga": "Macio, saboroso e aromático. Feito com purê de batata doce e ervas finas. Ideal para acompanhar refeições ou como lanche saudável e nutritivo.",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
     "id": 5,
@@ -45,9 +49,10 @@
     "foto": "005.jpeg",
     "nome": "Pão multigrãos de biomassa",
     "preco": "32,90",
-    "peso": "900g",
-    "descricao": "Saboroso e nutritivo, rico em fibras e nutrientes. Feito com biomassa de banana verde e uma variedade de grãos. Excelente opção para uma alimentação saudável.",
-    "descricaoLonga": "Saboroso e nutritivo, rico em fibras e nutrientes. Feito com biomassa de banana verde e uma variedade de grãos. Excelente opção para uma alimentação saudável."
+    "peso": "600g",
+    "descricao": "Feito com biomassa de banana verde e oleaginosas. Delicioso e saudável.",
+    "descricaoLonga": "Saboroso e nutritivo, rico em fibras e nutrientes. Feito com biomassa de banana verde e uma variedade de grãos. Excelente opção para uma alimentação saudável.",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
     "id": 6,
@@ -55,8 +60,42 @@
     "foto": "006.jpeg",
     "nome": "Pão de tomate seco e azeitonas",
     "preco": "32,90",
-    "peso": "900g",
-    "descricao": "Pão de Batata Doce com Tomate Seco, Azeitonas e Orégano: delicioso e sofisticado, com sabores mediterrâneos. Feito com purê de batata doce, tomate seco, azeitonas e orégano. Ótimo como acompanhamento ou para lanches especiais.",
-    "descricaoLonga": "Pão de Batata Doce com Tomate Seco, Azeitonas e Orégano: delicioso e sofisticado, com sabores mediterrâneos. Feito com purê de batata doce, tomate seco, azeitonas e orégano. Ótimo como acompanhamento ou para lanches especiais."
+    "peso": "600g",
+    "descricao": "Pão de Batata Doce com Tomate Seco, Azeitonas e Orégano: delicioso e sofisticado.",
+    "descricaoLonga": "Pão de Batata Doce com Tomate Seco, Azeitonas e Orégano: delicioso e sofisticado, com sabores mediterrâneos. Feito com purê de batata doce, tomate seco, azeitonas e orégano. Ótimo como acompanhamento ou para lanches especiais.",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
+  },
+  {
+    "id": 7,
+    "categoria": "Bolos",
+    "foto": "007.jpeg",
+    "nome": "Bolo de laranja",
+    "preco": "36,90",
+    "peso": "750g",
+    "descricao": "Bolo laranja sem glúten e lactose, cobertura laranja fresca. Delicado, cítrico e saudável.",
+    "descricaoLonga": "Bolo de laranja sem glúten e sem lactose, com cobertura de laranja fresca. Delicado, úmido e deliciosamente cítrico. Perfeito para quem busca uma opção saudável e saborosa. Aproveite o sabor natural e adocicado da laranja em cada mordida.",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
+  },
+  {
+    "id": 8,
+    "categoria": "Bolos",
+    "foto": "008.jpeg",
+    "nome": "Bolo de chocolate",
+    "preco": "36,90",
+    "peso": "750g",
+    "descricao": "Bolo de chocolate sem glúten e lactose, cobertura de chocolate amargo. Rico, denso e saboroso.",
+    "descricaoLonga": "Bolo de chocolate sem glúten e sem lactose, com cobertura de chocolate. Rico, denso e deliciosamente intenso. Perfeito para quem busca um saboroso bolo de chocolate sem culpa. Aproveite a combinação perfeita de chocolate em cada mordida.",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
+  },
+  {
+    "id": 9,
+    "categoria": "Bolos",
+    "foto": "009.jpeg",
+    "nome": "Bolo de Paçoca",
+    "preco": "36,90",
+    "peso": "750g",
+    "descricao": "Bolo de paçoca sem glúten e lactose, sabor autêntico de amendoim e textura macia. Perfeito para qualquer ocasião.",
+    "descricaoLonga": "Clássica sobremesa brasileira em forma de bolo: paçoca. Com uma base de amendoim, esse bolo é livre de glúten e lactose. Com uma textura macia e sabor autêntico de paçoca, é uma delícia que agrada todos os paladares. Desfrute do aroma irresistível de amendoim e saboreie a tradição brasileira em cada fatia. Ideal para festas, ocasiões especiais ou simplesmente para um delicioso lanche da tarde.",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   }
 ]

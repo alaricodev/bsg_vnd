@@ -1,22 +1,30 @@
 import { defineStore } from "pinia";
 import produtos from "../assets/data/data.json";
+import destaques from "../assets/data/destaques.json";
 
 export const useStore = defineStore("Store", {
   state: () => ({
     produtos,
-    counter: 0,
+    destaques,
     carrinhoItem: false,
     carrinhoTotal: 0,
     produtoSel: null,
     carrinho: [],
+    carrinhoAberto: false,
+    filtros: ["Todos", "Pães", "Bolos", "Lanches", "Sobremesas", "Rocamboles"],
+    filtroSelecionado: "Todos",
+    telaFiltro: true,
   }),
   getters: {
-    doubleCount: (state) => state.counter * 2,
+    totalCarrinho: (state) =>
+      state.carrinho.reduce((soma, item) => soma + item.total, 0),
+    totalItens: (state) => state.carrinho.length,
+    categorias: (state) =>
+      state.produtos
+        .map((p) => p.categoria)
+        .filter((c, i, arr) => arr.indexOf(c) === i),
   },
   actions: {
-    increment() {
-      this.counter++;
-    },
     selecionaProduto(id) {
       const objetoTemp = this.produtos.find((item) => item.id == id);
       this.produtoSel = objetoTemp;
@@ -35,6 +43,9 @@ export const useStore = defineStore("Store", {
         (soma, item) => soma + item.total,
         0
       );
+    },
+    isMobile() {
+      return screen.width < 600;
     },
   },
 });
