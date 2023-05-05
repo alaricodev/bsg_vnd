@@ -69,7 +69,14 @@
       <div class="text-subtitle1 q-pa-md">
         <q-icon name="payments" size="xs" />
         Dados de pagamento
+        <q-badge
+          v-show="pagamento == null"
+          outline
+          color="red"
+          label="Escolha um"
+        />
       </div>
+
       <div>
         <div class="q-pa-sm">
           <q-option-group
@@ -166,6 +173,7 @@ export default {
       });
     }
     return {
+      showNotif,
       apagarItem,
       forCurr,
       store,
@@ -189,7 +197,20 @@ export default {
       this.$router.push("/");
     },
     finalizaPedido() {
-      this.$router.push("/dadospedido");
+      if (this.validarDados()) {
+        this.$router.push("/dadospedido");
+      }
+    },
+    validarDados() {
+      if (this.dataPedido == null) {
+        this.showNotif("Informe uma data para a entrega !", "indigo");
+        return false;
+      }
+      if (this.pagamento == null) {
+        this.showNotif("Informe um meio de pagamento !", "blue");
+        return false;
+      }
+      return true;
     },
     getValidDates() {
       const today = new Date();

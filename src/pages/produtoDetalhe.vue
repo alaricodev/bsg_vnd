@@ -1,30 +1,4 @@
 <template>
-  <q-dialog v-model="modalAddItem">
-    <q-card style="width: 300px" class="q-px-sm q-pb-md">
-      <q-card-section>
-        <div class="text-h6">Item adicionado!</div>
-      </q-card-section>
-
-      <q-item dense>
-        <q-btn
-          label="Comprar mais delícias"
-          icon="sell"
-          @click="backIndex"
-          style="width: 100%; justify-content: center; align-items: center"
-        />
-      </q-item>
-
-      <q-item dense>
-        <q-btn
-          label="Finalizar a compra"
-          color="primary"
-          icon="shopping_cart"
-          @click="backIndex"
-          style="width: 100%; justify-content: center; align-items: center"
-        />
-      </q-item>
-    </q-card>
-  </q-dialog>
   <!-- Tela principal começa aqui -->
 
   <div class="q-ma-sm row items-start" style="width: 100%">
@@ -127,7 +101,6 @@ export default {
       quantidade: ref(1),
       preco: ref(null),
       strBotao: ref(""),
-      modalAddItem: ref(false),
     };
   },
   mounted() {
@@ -164,7 +137,7 @@ export default {
 
     addItemCarrinho() {
       this.store.adicionarCarrinho(this.store.produtoSel.id, this.quantidade);
-      this.modalAddItem = true;
+      this.$router.push("/");
     },
   },
 };

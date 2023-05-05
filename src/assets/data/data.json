@@ -97,5 +97,16 @@
     "descricao": "Bolo de paçoca sem glúten e lactose, sabor autêntico de amendoim e textura macia. Perfeito para qualquer ocasião.",
     "descricaoLonga": "Clássica sobremesa brasileira em forma de bolo: paçoca. Com uma base de amendoim, esse bolo é livre de glúten e lactose. Com uma textura macia e sabor autêntico de paçoca, é uma delícia que agrada todos os paladares. Desfrute do aroma irresistível de amendoim e saboreie a tradição brasileira em cada fatia. Ideal para festas, ocasiões especiais ou simplesmente para um delicioso lanche da tarde.",
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
+  },
+  {
+    "id": 10,
+    "categoria": "Rocambole",
+    "foto": "010.jpeg",
+    "nome": "Bolo de Paçoca",
+    "preco": "39,90",
+    "peso": "450g",
+    "descricao": "Rocambole de goiabada sem glúten e lactose, saboroso e único. Acompanha café da tarde ou surpreende em ocasiões especiais.",
+    "descricaoLonga": "Experimente nosso rocambole de goiabada sem glúten e sem lactose, uma sobremesa deliciosa e saudável. Feito com ingredientes selecionados, este bolo macio e úmido tem uma generosa camada de goiabada derretida no topo, perfeito para acompanhar um café da tarde ou impressionar seus convidados em ocasiões especiais. É uma opção ideal para quem busca uma dieta livre de glúten e lactose, ou simplesmente aprecia um sabor único e irresistível.",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   }
 ]
