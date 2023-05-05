@@ -26,6 +26,17 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/dadospedido",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "",
+        name: "dadosPed",
+        component: () => import("pages/dadosPedido.vue"),
+      },
+    ],
+  },
   // Always leave this as last one,
   // but you can also remove it
   {

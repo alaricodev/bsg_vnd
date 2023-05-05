@@ -1,96 +1,120 @@
 <template>
   <!-- Tela principal começa aqui -->
-  <div class="q-ma-sm row items-start" style="width: 100%">
-    <q-btn
-      flat
-      icon="arrow_back_ios"
-      style="width: 10%"
-      class="q-pa-sm"
-      @click="backIndex()"
-    />
-    <div
-      class="text-center q-pa-sm text-weight-regular text-h6 text-primary"
-      style="width: 90%"
-    >
-      CARRINHO DE COMPRAS
+  <div v-if="store.totalItens == 0">
+    <div class="flex flex-center">
+      <div class="row text-h5 text-primary">Carrinho Vazio</div>
+      <div class="row q-pa-md">
+        <q-btn outline label="Voltar" color="primary" @click="backIndex()" />
+      </div>
     </div>
   </div>
-  <q-separator />
-  <div class="q-pa-md" style="max-width: 100%">
-    <q-list
-      bordered
-      padding
-      style="justify-content: center; align-items: center"
+  <div v-else>
+    <div class="q-ma-sm row items-start" style="width: 100%">
+      <q-btn
+        flat
+        icon="arrow_back_ios"
+        style="width: 10%"
+        class="q-pa-sm"
+        @click="backIndex()"
+      />
+      <div
+        class="text-center q-pa-sm text-weight-regular text-h6 text-primary"
+        style="width: 90%"
+      >
+        CARRINHO DE COMPRAS
+      </div>
+    </div>
+
+    <div class="q-pa-md" style="max-width: 100%">
+      <q-list
+        bordered
+        padding
+        style="justify-content: center; align-items: center"
+      >
+        <q-item v-for="item in store.carrinho" :key="item.id">
+          <q-item-section>
+            <q-item-label>{{ item.nome }}</q-item-label>
+            <q-item-label overline
+              >{{ item.qtd }} x {{ forCurr.format(item.valor) }}</q-item-label
+            >
+          </q-item-section>
+
+          <q-item-section side top>
+            <q-item-label overline>
+              {{ forCurr.format(item.total) }}
+            </q-item-label>
+            <q-btn
+              flat
+              icon="delete"
+              color="red"
+              @click="apagarItem(item.id, item.nome)"
+            />
+          </q-item-section>
+        </q-item>
+      </q-list>
+      <div class="q-my-md" style="width: 100%">
+        <div class="row bg-secondary q-pa-sm" style="border-radius: 5px">
+          <div class="text-h6">TOTAL</div>
+          <q-space />
+          <div class="text-h6 text-primary">
+            {{ forCurr.format(store.totalCarrinho) }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <divisorTela height="1rem" />
+    <!-- Dados de Pagamento -->
+    <div class="q-pa-md" style="max-width: 100%">
+      <div class="text-subtitle1 q-pa-md">
+        <q-icon name="payments" size="xs" />
+        Dados de pagamento
+      </div>
+      <div>
+        <div class="q-pa-sm">
+          <q-option-group
+            v-model="pagamento"
+            :options="opPagamento"
+            color="primary"
+          />
+        </div>
+      </div>
+    </div>
+    <divisor-tela height="1rem" />
+    <div class="text-subtitle1 q-pa-md">
+      <q-icon name="calendar_month" size="xs" />
+      Agendamento da entrega
+    </div>
+    <div
+      class="q-pa-sm"
+      style="display: flex; justify-content: center; align-items: center"
+      v-show="dataPedido == null"
     >
-      <q-item>
-        <q-item-section>
-          <q-item-label>Pão de Abóbora - 900g</q-item-label>
-          <q-item-label overline>01 x R$ 26,90</q-item-label>
-        </q-item-section>
-
-        <q-item-section side top>
-          <q-item-label overline> R$ 26,90 </q-item-label>
-          <q-btn flat icon="delete" color="red" />
-        </q-item-section>
-      </q-item>
-      <q-separator spaced />
-      <q-item>
-        <q-item-section>
-          <q-item-label class="text-primary"
-            >Pão Australiano - 900g</q-item-label
-          >
-          <q-item-label overline>02 x R$ 32,90</q-item-label>
-        </q-item-section>
-
-        <q-item-section side top>
-          <q-item-label overline> R$ 65,80 </q-item-label>
-          <q-btn flat icon="delete" color="red" />
-        </q-item-section>
-      </q-item>
-    </q-list>
-  </div>
-
-  <divisor-tela height="1rem" />
-  <div class="text-subtitle1 q-pa-md">
-    <q-icon name="local_shipping" size="xs" />
-    Opções de entrega
-    <q-badge
-      v-show="opEntrega == null"
-      outline
-      color="red"
-      label="Selecione uma opção"
-    />
-  </div>
-  <div class="q-pa-sm">
-    <q-radio v-model="opEntrega" val="e" label="Entrega" />
-    <q-radio v-model="opEntrega" val="r" label="Retirada" />
-  </div>
-
-  <divisor-tela height="1rem" />
-  <div class="text-subtitle1 q-pa-md">
-    <q-icon name="calendar_month" size="xs" />
-    Agendamento da entrega
-  </div>
-  <div
-    class="q-pa-sm"
-    style="display: flex; justify-content: center; align-items: center"
-    v-show="dataPedido == null"
-  >
-    <q-badge outline color="red" label="Selecione uma data" />
-  </div>
-  <div
-    class="q-pa-sm"
-    style="display: flex; justify-content: center; align-items: center"
-  >
-    <q-date v-model="dataPedido" :options="getValidDates()" />
-  </div>
-  <div class="row text-overline q-ma-md">
-    A nossa entrega é feita em dias úteis. Os pedidos feitos até às 11:00 podem
-    ser entregues no mesmo dia.
-  </div>
-  <divisor-tela height="1rem" />
-  <div class="q-ma-md">
-    <q-btn label="Finalizar Pedido" color="primary" style="width: 100%" />
+      <q-badge outline color="red" label="Selecione uma data" />
+    </div>
+    <div
+      class="q-pa-sm"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <q-date
+        v-model="dataPedido"
+        :minimal="dataPedido == null ? true : false"
+        :options="getValidDates()"
+      />
+    </div>
+    <div class="row text-overline q-ma-md">
+      A nossa entrega é feita em dias úteis. Os pedidos feitos até às 11:00
+      podem ser entregues no mesmo dia.
+    </div>
+    <divisor-tela height="1rem" />
+    <div class="q-ma-md">
+      <q-btn
+        label="Finalizar Pedido"
+        color="primary"
+        style="width: 100%"
+        @click="finalizaPedido()"
+      />
+    </div>
   </div>
 </template>
 
@@ -98,15 +122,59 @@
 import divisorTela from "../components/divisorTela.vue";
 import { useStore } from "../stores/store.js";
 import { ref } from "vue";
+import { useQuasar } from "quasar";
 
 export default {
   components: { divisorTela },
   setup() {
     const store = useStore();
+    const $q = useQuasar();
+    const forCurr = new Intl.NumberFormat("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+    });
+    function apagarItem(id, produto) {
+      $q.dialog({
+        title: "Confirmação",
+        message: `Confirma a retirada do ${produto} ?`,
+        ok: {
+          push: true,
+        },
+        cancel: {
+          push: true,
+          color: "negative",
+        },
+        persistent: true,
+      })
+        .onOk(() => {
+          store.retiraCarrinho(id);
+          showNotif("Item Removido com sucesso !", "red");
+        })
+        .onCancel(() => {
+          // console.log('>>>> Cancel')
+        })
+        .onDismiss(() => {
+          // console.log('I am triggered on both OK and Cancel')
+        });
+    }
+    function showNotif(msg, color) {
+      $q.notify({
+        message: msg,
+        icon: "announcement",
+        color: color,
+        position: "center",
+      });
+    }
     return {
+      apagarItem,
+      forCurr,
       store,
       dataPedido: ref(null),
-      opEntrega: ref(null),
+      pagamento: ref(null),
+      opPagamento: ref([
+        { label: "Pix", value: "pix" },
+        { label: "Cartão de Crédito (via link)", value: "cred" },
+      ]),
     };
   },
   mounted() {
@@ -119,6 +187,9 @@ export default {
   methods: {
     backIndex() {
       this.$router.push("/");
+    },
+    finalizaPedido() {
+      this.$router.push("/dadospedido");
     },
     getValidDates() {
       const today = new Date();

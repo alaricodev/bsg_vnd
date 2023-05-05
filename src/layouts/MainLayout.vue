@@ -24,34 +24,35 @@
       </q-toolbar>
     </q-header>
     <q-footer
-      v-if="store.carrinhoItem && !store.carrinhoAberto"
+      v-if="store.totalItens > 0 && !store.carrinhoAberto"
       clickable
       @click="goCarrinho()"
     >
-      <q-bar class="bg-primary cursor-pointer">
-        <div class="cursor-pointer">
-          <div class="row">
-            <div class="q-ma-sm text-secondary">
-              {{ formataItens(store.totalItens) }}
+      <div class="q-ma-sm">
+        <q-bar class="bg-primary cursor-pointer">
+          <div class="cursor-pointer">
+            <div class="row">
+              <div class="text-secondary">
+                {{ formataItens(store.totalItens) }}
+              </div>
             </div>
           </div>
-        </div>
-        <q-space />
-        <div class="cursor-pointer">
-          <div class="row">
-            <div class="q-ma-sm">Ir para o carrinho</div>
-          </div>
-        </div>
-        <q-space />
-        <div class="cursor-pointer">
-          <div class="row">
-            <div class="q-ma-sm text-secondary">
-              {{ forCurr.format(store.totalCarrinho) }}
+          <q-space />
+          <div class="cursor-pointer">
+            <div class="row">
+              <div class="">CARRINHO</div>
             </div>
           </div>
-        </div>
+          <q-space />
+          <div class="cursor-pointer">
+            <div class="row">
+              <div class="text-secondary">
+                {{ forCurr.format(store.totalCarrinho) }}
+              </div>
+            </div>
+          </div>
 
-        <!-- <q-btn flat icon="shopping_cart" label="Finalizar compra" />
+          <!-- <q-btn flat icon="shopping_cart" label="Finalizar compra" />
         <q-space />
         <q-btn flat icon="sell" :label="" />
         <q-btn
@@ -60,7 +61,8 @@
           class="gt-xs"
           :label="forCurr.format(store.totalCarrinho)"
         /> -->
-      </q-bar>
+        </q-bar>
+      </div>
     </q-footer>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>

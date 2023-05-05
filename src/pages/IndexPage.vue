@@ -13,7 +13,7 @@
       </div>
     </div>
   </q-page>
-  <divisorTela />
+  <divisorTela height="1rem" />
 </template>
 
 <script>

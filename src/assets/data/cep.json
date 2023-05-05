@@ -1,0 +1,72 @@
+[
+  { "bairro": "Cachoeira do Bom Jesus", "cep": "88056-000", "regiao": "Norte" },
+  { "bairro": "Canasvieiras", "cep": "88054-001", "regiao": "Norte" },
+  { "bairro": "Ingleses", "cep": "88058-010", "regiao": "Norte" },
+  {
+    "bairro": "Ingleses do Rio Vermelho",
+    "cep": "88058-700",
+    "regiao": "Norte"
+  },
+  { "bairro": "José Mendes", "cep": "88051-700", "regiao": "Norte" },
+  { "bairro": "Jurerê Internacional", "cep": "88053-505", "regiao": "Norte" },
+  { "bairro": "Jurerê Tradicional", "cep": "88054-790", "regiao": "Norte" },
+  { "bairro": "Monte Verde", "cep": "88058-003", "regiao": "Norte" },
+  { "bairro": "Praia Brava", "cep": "88056-500", "regiao": "Norte" },
+  { "bairro": "Ratones", "cep": "88050-001", "regiao": "Norte" },
+  { "bairro": "Sambaqui", "cep": "88051-090", "regiao": "Norte" },
+  {
+    "bairro": "Santo Antônio de Lisboa",
+    "cep": "88050-400",
+    "regiao": "Norte"
+  },
+  {
+    "bairro": "São João do Rio Vermelho",
+    "cep": "88056-350",
+    "regiao": "Norte"
+  },
+  { "bairro": "Tapera", "cep": "88049-070", "regiao": "Norte" },
+  { "bairro": "Vargem do Bom Jesus", "cep": "88058-050", "regiao": "Norte" },
+  { "bairro": "Daniela", "cep": "88053-520", "regiao": "Norte" },
+
+  { "bairro": "Agronômica", "cep": "88025-000", "regiao": "Central" },
+  { "bairro": "Canto", "cep": "88015-030", "regiao": "Central" },
+  { "bairro": "Capoeiras", "cep": "88070-000", "regiao": "Central" },
+  { "bairro": "Centro", "cep": "88010-400", "regiao": "Central" },
+  { "bairro": "Coqueiros", "cep": "88080-000", "regiao": "Central" },
+  { "bairro": "Itacorubi", "cep": "88034-001", "regiao": "Central" },
+  { "bairro": "Monte Cristo", "cep": "88025-240", "regiao": "Central" },
+  { "bairro": "Pantanal", "cep": "88040-001", "regiao": "Central" },
+  { "bairro": "Trindade", "cep": "88036-001", "regiao": "Central" },
+
+  { "bairro": "Balneário", "cep": "88070-100", "regiao": "Continental" },
+  { "bairro": "Bom Abrigo", "cep": "88103-800", "regiao": "Continental" },
+  { "bairro": "Capivari", "cep": "88049-150", "regiao": "Continental" },
+  { "bairro": "Carianos", "cep": "88047-290", "regiao": "Continental" },
+  { "bairro": "Estreito", "cep": "88070-100", "regiao": "Continental" },
+  { "bairro": "Itaguaçu", "cep": "88080-000", "regiao": "Continental" },
+  { "bairro": "Jardim Atlântico", "cep": "88095-100", "regiao": "Continental" },
+  { "bairro": "Jardim Eldorado", "cep": "88103-400", "regiao": "Continental" },
+  { "bairro": "Jardim Janaina", "cep": "88101-580", "regiao": "Continental" },
+  { "bairro": "Jardim Itália", "cep": "88101-330", "regiao": "Continental" },
+  { "bairro": "Saco dos Limões", "cep": "88045-000", "regiao": "Continental" },
+
+  { "bairro": "Armação", "cep": "88066-500", "regiao": "Sul" },
+  {
+    "bairro": "Caeira do Saco dos Limões",
+    "cep": "88045-001",
+    "regiao": "Sul"
+  },
+  { "bairro": "Campeche", "cep": "88063-303", "regiao": "Sul" },
+  { "bairro": "Costeira do Pirajubaé", "cep": "88047-702", "regiao": "Sul" },
+  { "bairro": "Jardim Anchieta", "cep": "88049-110", "regiao": "Sul" },
+  { "bairro": "Pântano do Sul", "cep": "88067-300", "regiao": "Sul" },
+  { "bairro": "Ribeirão da Ilha", "cep": "88064-540", "regiao": "Sul" },
+  { "bairro": "Rio Tavares", "cep": "88048-300", "regiao": "Sul" },
+  { "bairro": "Saco Grande", "cep": "88032-005", "regiao": "Sul" },
+  { "bairro": "Tapera", "cep": "88049-420", "regiao": "Sul" },
+
+  { "bairro": "Barra da Lagoa", "cep": "88061-010", "regiao": "Leste" },
+  { "bairro": "Costa da Lagoa", "cep": "88067-000", "regiao": "Leste" },
+  { "bairro": "Lagoa da Conceição", "cep": "88062-000", "regiao": "Leste" },
+  { "bairro": "Rio Tavares", "cep": "88048-000", "regiao": "Leste" }
+]

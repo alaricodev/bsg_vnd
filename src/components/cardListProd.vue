@@ -1,12 +1,16 @@
 <template>
   <div
-    class="q-pa-md"
+    class="q-pa-sm"
     style="max-width: 450px"
     v-for="produto in produtos"
     :key="produto.id"
   >
     <div class="div01">
-      <div class="div02">
+      <div
+        class="div02 cursor-pointer"
+        clickable
+        @click="abrirDetalhe(produto.id)"
+      >
         <q-img
           :src="srcImg(produto.foto)"
           spinner-color="white"

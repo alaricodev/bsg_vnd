@@ -34,9 +34,7 @@ export default {
       store,
     };
   },
-  mounted() {
-    console.log(this.store.destaques);
-  },
+
   computed: {
     isMobile() {
       return screen.width < 600;

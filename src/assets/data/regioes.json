@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "regiao": "Norte",
+    "valor": 35,
+    "bairros": [
+      "Cachoeira do Bom Jesus",
+      "Canasvieiras",
+      "Ingleses",
+      "Jurerê Internacional",
+      "Jurerê Tradicional",
+      "Praia Brava",
+      "Monte Verde",
+      "Ratones",
+      "Sambaqui",
+      "Santo Antônio de Lisboa",
+      "Vargem do Bom Jesus"
+    ]
+  },
+  {
+    "id": 2,
+    "regiao": "Leste",
+    "valor": 25,
+    "bairros": [
+      "Costa da Lagoa",
+      "Lagoa da Conceição",
+      "João Paulo",
+      "Saco Grande"
+    ]
+  },
+  {
+    "id": 3,
+    "regiao": "Sul",
+    "valor": 40,
+    "bairros": [
+      "Armação",
+      "Carianos",
+      "Pântano do Sul",
+      "Ribeirão da Ilha",
+      "Tapera",
+      "Campeche",
+      "Morro das Pedras"
+    ]
+  },
+  {
+    "id": 4,
+    "regiao": "Continente",
+    "valor": 10,
+    "bairros": [
+      "Abraão",
+      "Balneário",
+      "Capoeiras",
+      "Coqueiros",
+      "Estreito",
+      "Itaguaçu",
+      "Jardim Atlântico",
+      "Saco dos Limões",
+      "Santa Mônica",
+      "Trindade",
+      "Vargem Grande",
+      "Centro"
+    ]
+  },
+  {
+    "id": 5,
+    "regiao": "Central",
+    "valor": 15,
+    "bairros": [
+      "Centro",
+      "Agronômica",
+      "Canto",
+      "Trindade",
+      "Serrinha",
+      "Bom Abrigo",
+      "Mont Serrat",
+      "Itacorubi",
+      "Parque São Jorge",
+      "Canal"
+    ]
+  },
+  {
+    "id": 6,
+    "regiao": "Noroeste",
+    "valor": 35,
+    "bairros": ["Córrego Grande", "Itacorubi"]
+  }
+]
