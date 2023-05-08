@@ -21,7 +21,7 @@ export const useStore = defineStore("Store", {
     lsCarrinhoKey: "bsgcart",
     lsCliKey: "bsgcli",
     // Configurações
-    telefoneWhatsApp: "12981875018",
+    telefoneWhatsApp: "48991832514",
   }),
   getters: {
     totalCarrinho: (state) =>
