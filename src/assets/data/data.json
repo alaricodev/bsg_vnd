@@ -2,6 +2,7 @@
   {
     "id": 1,
     "categoria": "Pães",
+    "idCat": 1,
     "foto": "001.jpeg",
     "nome": "Pão de Abóbora",
     "preco": "26,90",
@@ -13,6 +14,7 @@
   {
     "id": 2,
     "categoria": "Pães",
+    "idCat": 1,
     "foto": "002.jpeg",
     "nome": "Pão de batata doce com chia",
     "preco": "26,90",
@@ -24,6 +26,7 @@
   {
     "id": 3,
     "categoria": "Pães",
+    "idCat": 1,
     "foto": "003.jpeg",
     "nome": "Pão Australiano",
     "preco": "32,90",
@@ -35,6 +38,7 @@
   {
     "id": 4,
     "categoria": "Pães",
+    "idCat": 1,
     "foto": "004.jpeg",
     "nome": "Pão batata doce e ervas finas",
     "preco": "26,90",
@@ -46,6 +50,7 @@
   {
     "id": 5,
     "categoria": "Pães",
+    "idCat": 1,
     "foto": "005.jpeg",
     "nome": "Pão multigrãos de biomassa",
     "preco": "32,90",
@@ -57,6 +62,7 @@
   {
     "id": 6,
     "categoria": "Pães",
+    "idCat": 1,
     "foto": "006.jpeg",
     "nome": "Pão de tomate seco e azeitonas",
     "preco": "32,90",
@@ -68,6 +74,7 @@
   {
     "id": 7,
     "categoria": "Bolos",
+    "idCat": 2,
     "foto": "007.jpeg",
     "nome": "Bolo de laranja",
     "preco": "36,90",
@@ -79,6 +86,7 @@
   {
     "id": 8,
     "categoria": "Bolos",
+    "idCat": 2,
     "foto": "008.jpeg",
     "nome": "Bolo de chocolate",
     "preco": "36,90",
@@ -90,6 +98,7 @@
   {
     "id": 9,
     "categoria": "Bolos",
+    "idCat": 2,
     "foto": "009.jpeg",
     "nome": "Bolo de Paçoca",
     "preco": "36,90",
@@ -101,6 +110,7 @@
   {
     "id": 10,
     "categoria": "Rocambole",
+    "idCat": 3,
     "foto": "010.jpeg",
     "nome": "Rocambole de goibada",
     "preco": "39,90",

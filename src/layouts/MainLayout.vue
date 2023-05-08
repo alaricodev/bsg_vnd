@@ -18,9 +18,9 @@
             style="height: 30px; max-width: 180px"
           />
         </q-toolbar-title>
-        <div style="text-align: left; align-items: left">
+        <!-- <div style="text-align: left; align-items: left">
           <q-btn flat icon="search" />
-        </div>
+        </div> -->
       </q-toolbar>
     </q-header>
     <q-footer
@@ -66,6 +66,7 @@
     </q-footer>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+      <menu-lateral />
       <q-list>
         <q-item-label header class="text-primary text-bold text-overline">
           CATEGORIAS
@@ -89,27 +90,14 @@
 import { defineComponent, ref } from "vue";
 import EssentialLink from "components/EssentialLink.vue";
 import { useStore } from "../stores/store";
-
-const linksList = [
-  {
-    title: "Pães",
-    caption: "Deliciosos pães sem glúten",
-    icon: "breakfest_dining",
-    link: "",
-  },
-  {
-    title: "Bolos",
-    caption: "Pode ser gostoso e saudável",
-    icon: "cake",
-    link: "",
-  },
-];
+import MenuLateral from "src/components/menuLateral.vue";
 
 export default defineComponent({
   name: "MainLayout",
 
   components: {
     EssentialLink,
+    MenuLateral,
   },
 
   setup() {
@@ -119,6 +107,52 @@ export default defineComponent({
       style: "currency",
       currency: "BRL",
     });
+    const linksList = [
+      {
+        title: "Cardápio online",
+        caption: "Compre por aqui mesmo e receba em casa",
+        icon: "fa-solid fa-dumpster",
+        link: "/",
+        tipoLink: "rota",
+      },
+      {
+        title: "Venha para nossa loja",
+        caption: "Clique aqui e abra uma rota no google maps",
+        icon: "fa-solid fa-location-dot",
+        link: "https://www.google.com/maps/dir/?api=1&destination=-27.58569244273288, -48.58341109288488",
+        tipoLink: "externo",
+      },
+
+      // {
+      //   title: "Onde Estamos",
+      //   caption: "Conheça nossa loja no estreiro",
+      //   icon: "fa-regular fa-map",
+      //   link: "/landingpage/loc",
+      //   tipoLink: "rota",
+      // },
+      {
+        title: "Whatsapp",
+        caption: "Tire as duas duvidas com a gente",
+        icon: "fa-brands fa-whatsapp",
+        link: `https://wa.me/55${store.telefoneWhatsApp}`,
+        tipoLink: "externo",
+      },
+      {
+        title: "Instagram",
+        caption: "Fique por dentro de todas nossas novidades",
+        icon: "fa-brands fa-instagram",
+        link: "https://www.instagram.com/bistrosemgluten/",
+        tipoLink: "externo",
+      },
+      {
+        title: "Quem somos",
+        caption: "Conheça um pouco sobre a gente e a nossa localização",
+        icon: "fa-solid fa-shop",
+        link: "/landingpage",
+        tipoLink: "rota",
+      },
+    ];
+
     function formataItens(valor) {
       if (valor == 1) {
         return `0${valor} ITEM`;
@@ -144,6 +178,7 @@ export default defineComponent({
   },
   mounted() {
     this.leftDrawerOpen = false;
+    this.store.carrinho = this.store.carregarLs(this.store.lsCarrinhoKey);
   },
 
   methods: {

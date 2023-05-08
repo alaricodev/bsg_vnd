@@ -87,6 +87,7 @@
 <script>
 import { useStore } from "../stores/store.js";
 import { ref } from "vue";
+
 export default {
   setup() {
     const forCurr = new Intl.NumberFormat("pt-BR", {

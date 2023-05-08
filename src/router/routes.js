@@ -37,6 +37,39 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/termino",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "",
+        name: "compraTermino",
+        component: () => import("pages/terminoCompra.vue"),
+      },
+    ],
+  },
+  {
+    path: "/landingpage",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "",
+        name: "ladingPAgeName",
+        component: () => import("pages/landingPage.vue"),
+      },
+    ],
+  },
+  {
+    path: "/categoria/:id",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "",
+        name: "prodCategoriaName",
+        component: () => import("pages/ProdutoCategoria.vue"),
+      },
+    ],
+  },
   // Always leave this as last one,
   // but you can also remove it
   {

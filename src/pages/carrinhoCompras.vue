@@ -198,6 +198,7 @@ export default {
     },
     finalizaPedido() {
       if (this.validarDados()) {
+        this.store.insereDadosCarrinho(this.pagamento, this.dataPedido);
         this.$router.push("/dadospedido");
       }
     },

@@ -12,7 +12,16 @@ export const useStore = defineStore("Store", {
     produtoSel: null,
     carrinho: [],
     carrinhoAberto: false,
-    telaFiltro: true,
+    // Fechamento do pedido
+    tipoPagamento: null,
+    dataPedido: null,
+    opcaoFrete: null,
+    dadosCliente: [],
+    // localStorage
+    lsCarrinhoKey: "bsgcart",
+    lsCliKey: "bsgcli",
+    // Configurações
+    telefoneWhatsApp: "12981875018",
   }),
   getters: {
     totalCarrinho: (state) =>
@@ -58,6 +67,8 @@ export const useStore = defineStore("Store", {
         (soma, item) => soma + item.total,
         0
       );
+
+      this.salvarLs(this.lsCarrinhoKey, this.carrinho);
     },
     retiraCarrinho(id) {
       this.carrinho = this.carrinho.filter((item) => {
@@ -66,10 +77,41 @@ export const useStore = defineStore("Store", {
 
       if (this.carrinho.length == 0) {
         this.carrinhoItem = false;
+        // Caso o carrinho esteja vazio, eu removo o coockie
+        this.apagarLs(this.lsCarrinhoKey);
+      } else {
+        // Caso o carrinho não esteja vazio, eu apenas atualizo
+        this.salvarLs(this.lsCarrinhoKey, this.carrinho);
       }
+    },
+    limparCarrinho() {
+      (this.carrinhoItem = false),
+        (this.carrinhoTotal = 0),
+        (this.produtoSel = null),
+        (this.carrinho = []),
+        (this.carrinhoAberto = false),
+        (this.opcaoFrete = null);
+    },
+    insereDadosCarrinho(pagamento, dataPedido) {
+      this.tipoPagamento = pagamento;
+      this.dataPedido = dataPedido;
     },
     isMobile() {
       return screen.width < 600;
+    },
+    mudaOpcaoFrete(valor) {
+      this.opcaoFrete = valor;
+    },
+    // Operações com cookies
+    carregarLs(nome) {
+      const cartJSON = localStorage.getItem(nome);
+      return cartJSON ? JSON.parse(cartJSON) : [];
+    },
+    salvarLs(nome, valor) {
+      localStorage.setItem(nome, JSON.stringify(valor));
+    },
+    apagarLs(nome) {
+      localStorage.removeItem(nome);
     },
   },
 });

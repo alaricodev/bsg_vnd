@@ -1,17 +1,28 @@
 <template>
-  <q-item clickable tag="a" :href="link">
-    <!-- <q-item-section
-      v-if="icon"
-      avatar
-    >
-      <q-icon :name="icon" />
-    </q-item-section> -->
+  <div v-if="tipoLink != 'rota'">
+    <q-item clickable tag="a" :href="link" target="_blank">
+      <q-item-section v-if="icon" avatar>
+        <q-icon :name="icon" color="primary" />
+      </q-item-section>
 
-    <q-item-section>
-      <q-item-label class="text-primary text-bold">{{ title }}</q-item-label>
-      <q-item-label caption>{{ caption }}</q-item-label>
-    </q-item-section>
-  </q-item>
+      <q-item-section>
+        <q-item-label class="text-primary text-bold">{{ title }}</q-item-label>
+        <q-item-label caption>{{ caption }}</q-item-label>
+      </q-item-section>
+    </q-item>
+  </div>
+  <div v-else>
+    <q-item clickable :to="link">
+      <q-item-section v-if="icon" avatar>
+        <q-icon :name="icon" />
+      </q-item-section>
+
+      <q-item-section>
+        <q-item-label class="text-primary text-bold">{{ title }}</q-item-label>
+        <q-item-label caption>{{ caption }}</q-item-label>
+      </q-item-section>
+    </q-item>
+  </div>
 </template>
 
 <script>
@@ -38,6 +49,11 @@ export default defineComponent({
     icon: {
       type: String,
       default: "",
+    },
+
+    tipoLink: {
+      type: String,
+      default: "rota",
     },
   },
 });
