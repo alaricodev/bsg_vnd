@@ -1,8 +1,8 @@
 {
   "name": "bsg-vnd",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "BSG",
+  "description": "e-commerce do bistro sem gluten",
+  "productName": "Bistrô sem Glúten",
   "author": "alaricodev <alarico.pcsc@gmail.com>",
   "private": true,
   "scripts": {

@@ -106,13 +106,15 @@
   <footer>
     <div class="flex flex-center q-ma-md">&copy; 2023 Bistrô sem Glúten</div>
   </footer>
+  <botao-fluante />
 </template>
 
 <script>
 import divisorTela from "src/components/divisorTela.vue";
+import BotaoFluante from "src/components/BotaoFluante.vue";
 import { ref } from "vue";
 export default {
-  components: { divisorTela },
+  components: { divisorTela, BotaoFluante },
   setup() {
     return {
       slide: ref(1),

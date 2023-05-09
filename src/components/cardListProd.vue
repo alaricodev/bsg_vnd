@@ -5,7 +5,7 @@
     v-for="produto in produtos"
     :key="produto.id"
   >
-    <div class="div01">
+    <div :class="store.isMobile ? 'div01-mob' : 'div01'">
       <div
         class="div02 cursor-pointer"
         clickable
@@ -20,14 +20,15 @@
       <div style="flex: 1">
         <q-item clickable @click="abrirDetalhe(produto.id)">
           <q-item-section>
-            <q-item-label class="text-subtitle1 text-primary q-mb-sm">
-              {{ produto.nome }} - {{ produto.peso }}
+            <q-item-label class="text-subtitle1 text-bold q-mb-sm">
+              {{ produto.nome }}
             </q-item-label>
             <q-item-label caption>
               {{ produto.descricao }}
             </q-item-label>
             <q-item-label class="text-h6 text-primary q-mt-md">
               R$ {{ produto.preco }}
+              <q-badge outline color="primary" :label="produto.peso" />
             </q-item-label>
           </q-item-section>
         </q-item>
@@ -74,8 +75,14 @@ export default {
 .div01 {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
+  border: 1px solid #edebeb;
   border-radius: 5px;
+  padding: 10px;
+}
+.div01-mob {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #edebeb;
   padding: 10px;
 }
 .div02 {

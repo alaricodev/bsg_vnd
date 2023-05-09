@@ -1,7 +1,7 @@
 <template>
   <div class="scroll-container q-pa-sm">
     <div class="scroll-content">
-      <q-chip
+      <!-- <q-chip
         v-for="item in filtro"
         :key="item"
         outline
@@ -12,7 +12,16 @@
         @click="selecionaItem(item)"
       >
         {{ item }}
-      </q-chip>
+      </q-chip> -->
+      <q-badge
+        outline
+        v-for="item in filtro"
+        :key="item"
+        class="q-mx-sm cursor-pointer"
+        color="primary"
+        :label="item"
+        @click="selecionaItem(item)"
+      />
     </div>
   </div>
 </template>
@@ -20,6 +29,7 @@
 <script>
 import { ref } from "vue";
 import { useStore } from "../stores/store";
+
 export default {
   name: "btnFiltro",
   props: ["texto"],
@@ -28,11 +38,13 @@ export default {
     return {
       store,
       filtro: ref([]),
+      topoTela: ref(false),
     };
   },
   mounted() {
     this.filtro = this.store.categorias;
   },
+
   methods: {
     mudaSelecao(nome) {
       this.store.filtroSelecionado === nome

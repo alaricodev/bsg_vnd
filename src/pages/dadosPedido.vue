@@ -69,7 +69,7 @@
           Endereço de entrega
         </div>
         <div class="row" style="width: 100%">
-          <div class="col-7 q-pa-sm">
+          <div class="col-5 q-pa-sm">
             <q-input
               dense
               v-model="cep"
@@ -81,9 +81,9 @@
               style="width: 100%"
             />
           </div>
-          <div class="col-5 q-pa-sm">
+          <div class="col-7 q-pa-sm">
             <q-btn
-              label="Buscar CEP"
+              label="Buscar Endereço"
               color="primary"
               style="width: 100%"
               @click="buscaCep()"
@@ -145,6 +145,9 @@
         </div>
         <div class="q-pa-sm">
           <lista-frete />
+        </div>
+        <div class="q-pa-sm text overline">
+          * ATENÇÃO: os preços do frete são referências.
         </div>
       </div>
     </div>
@@ -385,7 +388,7 @@ export default {
         }
 
         // Enviar dados para o whatsapp
-        window.open(mensagemZap(pedido), "_blank");
+        window.open(mensagemZap(pedido, this.opEntrega), "_blank");
         this.$router.push("/termino");
       }
     },

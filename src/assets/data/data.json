@@ -6,7 +6,7 @@
     "foto": "001.jpeg",
     "nome": "Pão de Abóbora",
     "preco": "26,90",
-    "peso": "600g",
+    "peso": "550g",
     "descricao": "Pão de abóbora sem glúten: macio, úmido e saboroso, feito com  purê de abóbora. ",
     "descricaoLonga": "Pão de abóbora sem glúten: macio, úmido e saboroso. Feito com farinha sem glúten e purê de abóbora. Ótima opção para quem busca alimentos sem glúten.",
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
@@ -18,7 +18,7 @@
     "foto": "002.jpeg",
     "nome": "Pão de batata doce com chia",
     "preco": "26,90",
-    "peso": "600g",
+    "peso": "550g",
     "descricao": "Pão de batata doce com chia, rico em fibras e sabor levemente adocicado.",
     "descricaoLonga": "Pão de batata doce com chia, sem glúten. Sabor levemente adocicado e rico em fibras. Ótima opção para dietas sem glúten e saudáveis.",
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
@@ -30,7 +30,7 @@
     "foto": "003.jpeg",
     "nome": "Pão Australiano",
     "preco": "32,90",
-    "peso": "600g",
+    "peso": "550g",
     "descricao": "Pão Australiano: macio e saboroso, com mel e cacau. Saboroso e saudável.",
     "descricaoLonga": "Pão Australiano: macio e saboroso, com mel e cacau em sua receita. Ideal para acompanhar refeições ou como lanche. Um clássico da culinária australiana.",
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
@@ -42,7 +42,7 @@
     "foto": "004.jpeg",
     "nome": "Pão batata doce e ervas finas",
     "preco": "26,90",
-    "peso": "600g",
+    "peso": "550g",
     "descricao": "Feito com purê de batata doce e ervas finas. Macio, saboroso e aromático.",
     "descricaoLonga": "Macio, saboroso e aromático. Feito com purê de batata doce e ervas finas. Ideal para acompanhar refeições ou como lanche saudável e nutritivo.",
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
@@ -54,7 +54,7 @@
     "foto": "005.jpeg",
     "nome": "Pão multigrãos de biomassa",
     "preco": "32,90",
-    "peso": "600g",
+    "peso": "550g",
     "descricao": "Feito com biomassa de banana verde e oleaginosas. Delicioso e saudável.",
     "descricaoLonga": "Saboroso e nutritivo, rico em fibras e nutrientes. Feito com biomassa de banana verde e uma variedade de grãos. Excelente opção para uma alimentação saudável.",
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
@@ -66,7 +66,7 @@
     "foto": "006.jpeg",
     "nome": "Pão de tomate seco e azeitonas",
     "preco": "32,90",
-    "peso": "600g",
+    "peso": "550g",
     "descricao": "Pão de Batata Doce com Tomate Seco, Azeitonas e Orégano: delicioso e sofisticado.",
     "descricaoLonga": "Pão de Batata Doce com Tomate Seco, Azeitonas e Orégano: delicioso e sofisticado, com sabores mediterrâneos. Feito com purê de batata doce, tomate seco, azeitonas e orégano. Ótimo como acompanhamento ou para lanches especiais.",
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
@@ -117,6 +117,18 @@
     "peso": "450g",
     "descricao": "Rocambole de goiabada sem glúten e lactose, saboroso e único. Acompanha café da tarde ou surpreende em ocasiões especiais.",
     "descricaoLonga": "Experimente nosso rocambole de goiabada sem glúten e sem lactose, uma sobremesa deliciosa e saudável. Feito com ingredientes selecionados, este bolo macio e úmido tem uma generosa camada de goiabada derretida no topo, perfeito para acompanhar um café da tarde ou impressionar seus convidados em ocasiões especiais. É uma opção ideal para quem busca uma dieta livre de glúten e lactose, ou simplesmente aprecia um sabor único e irresistível.",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
+  },
+  {
+    "id": 11,
+    "categoria": "Pães",
+    "idCat": 1,
+    "foto": "011.jpeg",
+    "nome": "Pão de milho e erva doce",
+    "preco": "26,90",
+    "peso": "550g",
+    "descricao": "Pão sem glúten e sem leite de milho com erva doce: saboroso, aromático e rico em nutrientes.",
+    "descricaoLonga": "É uma opção deliciosa para quem busca um sabor mais rústico e aromático em seu pão. Como não contém glúten nem leite, é uma alternativa perfeita para pessoas que seguem uma dieta sem esses ingredientes. O resultado é um pão com uma crosta crocante e dourada, com uma textura macia e levemente úmida por dentro. O sabor é ligeiramente adocicado, com o toque marcante e perfumado da erva doce. É uma excelente opção para acompanhar um café da manhã ou lanche da tarde, ou mesmo para ser utilizado como base para sanduíches ou torradas. O pão de milho com erva doce também é rico em fibras e nutrientes provenientes do milho, como vitaminas do complexo B, ferro e antioxidantes.",
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   }
 ]

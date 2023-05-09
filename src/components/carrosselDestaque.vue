@@ -14,8 +14,8 @@
           class="borda-img cursor-pointer"
           :style="
             isMobile
-              ? `width: 100px; height: 140px`
-              : `width: 200px; height: 280px`
+              ? `width: 150px; height: 210px`
+              : `width: 300px; height: 420px`
           "
         />
       </div>

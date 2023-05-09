@@ -81,7 +81,36 @@
   {
     "id": 6,
     "regiao": "Noroeste",
-    "valor": 35,
+    "valor": 30,
     "bairros": ["Córrego Grande", "Itacorubi"]
+  },
+  {
+    "id": 7,
+    "regiao": "São José 01",
+    "valor": 15,
+    "bairros": ["Barreiros", "Campinas", "Kobrasol", "Forquilhas"]
+  },
+  {
+    "id": 8,
+    "regiao": "São José 02",
+    "valor": 20,
+    "bairros": ["Ipiranga", "Areias", "Praia Comprida"]
+  },
+  {
+    "id": 9,
+    "regiao": "Palhoça",
+    "valor": 35,
+    "bairros": [
+      "Centro",
+      "Ponte do Imaruim",
+      "Passa Vinte",
+      "Jardim Eldorado",
+      "Madri",
+      "Pedra Branca",
+      "Bela Vista",
+      "Praia de Fora",
+      "Aririú",
+      "Aririú da Formiga"
+    ]
   }
 ]

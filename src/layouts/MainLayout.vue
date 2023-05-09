@@ -68,15 +68,14 @@
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <menu-lateral />
       <q-list>
-        <q-item-label header class="text-primary text-bold text-overline">
-          CATEGORIAS
-        </q-item-label>
-
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
           v-bind="link"
         />
+        <!-- <q-item-label header class="text-primary text-bold text-overline">
+          CATEGORIAS
+        </q-item-label> -->
       </q-list>
     </q-drawer>
 

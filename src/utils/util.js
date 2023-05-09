@@ -1,6 +1,6 @@
 import { linkInicial, paragrafo, lista } from "../utils/utilWhatsapp.js";
 
-export function mensagemZap(dados) {
+export function mensagemZap(dados, opEntrega) {
   console.log(dados);
   const forCurr = new Intl.NumberFormat("pt-BR", {
     style: "currency",
@@ -17,7 +17,6 @@ export function mensagemZap(dados) {
   return (
     linkInicial(dados.telefoneEnvio) +
     paragrafo("%F0%9F%8D%9E _*Bem vindo ao Bistrô sem Glúten*_ %0A") +
-    paragrafo("*DADOS DO PEDIDO*" + "%0A") +
     paragrafo("%0A") +
     paragrafo(`_${dados.header}_%0A%0A`) +
     paragrafo("--------------------------------------------------%0A") +
@@ -39,11 +38,11 @@ export function mensagemZap(dados) {
       `%E2%98%8E%EF%B8%8F Telefone: _*${dados.cliente.telefone}*_%0A%0A`
     ) +
     paragrafo(`*ENDEREÇO DE ENTREGA*%0A`) +
-    (dados.opEntrega == "e"
-      ? paragrafo(
-          `${dados.cliente.logradouro}, ${dados.cliente.numero} - ${dados.cliente.complemento} - ${dados.cliente.bairro} - ${dados.cliente.cidade} - CEP: ${dados.cliente.cep}%0A`
-        )
-      : "") +
+    paragrafo(
+      opEntrega == "e"
+        ? `${dados.cliente.logradouro}, ${dados.cliente.numero} - ${dados.cliente.complemento} - ${dados.cliente.bairro} - ${dados.cliente.cidade} - CEP: ${dados.cliente.cep}%0A`
+        : `Cliente vai retirar na loja %0A`
+    ) +
     paragrafo("%0A") +
     paragrafo(`%0A_${dados.footer}_%0A`) +
     paragrafo("%F0%9F%99%8F %F0%9F%91%8F %F0%9F%A5%B0 %F0%9F%A4%97")
