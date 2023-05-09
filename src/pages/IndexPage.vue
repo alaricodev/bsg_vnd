@@ -1,5 +1,8 @@
 <template>
-  <div class="q-pa-sm text-subtitle1 text-bold">D E S T A Q U E S</div>
+  <div class="q-pa-sm text-subtitle1 text-bold text-center">
+    D E S T A Q U E S
+  </div>
+
   <carrossel-destaque />
   <btnFiltro />
   <q-page>
