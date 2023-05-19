@@ -9,7 +9,6 @@ export const useStore = defineStore("Store", {
     destaques,
     carrinhoItem: false,
     carrinhoTotal: 0,
-    produtoSel: null,
     carrinho: [],
     carrinhoAberto: false,
     // Fechamento do pedido
@@ -34,9 +33,8 @@ export const useStore = defineStore("Store", {
         .filter((c, i, arr) => arr.indexOf(c) === i),
   },
   actions: {
-    selecionaProduto(id) {
-      const objetoTemp = this.produtos.find((item) => item.id == id);
-      this.produtoSel = objetoTemp;
+    dadosProduto(idProd) {
+      return this.produtos.find((item) => item.id == idProd);
     },
     adicionarCarrinho(idProd, qtd) {
       const objetoTemp = this.produtos.find((item) => item.id == idProd);
@@ -87,7 +85,6 @@ export const useStore = defineStore("Store", {
     limparCarrinho() {
       (this.carrinhoItem = false),
         (this.carrinhoTotal = 0),
-        (this.produtoSel = null),
         (this.carrinho = []),
         (this.carrinhoAberto = false),
         (this.opcaoFrete = null);

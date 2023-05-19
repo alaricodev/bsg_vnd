@@ -37,5 +37,12 @@ export default {
       this.store.mudaOpcaoFrete(parseFloat(this.escolhaFrete.split(";")[1]));
     },
   },
+  methods: {
+    buscaValorFrete(bairro) {
+      const obj = this.regioes.find((item) =>
+        item.bairros.find((el) => el.toUpperCase() === bairro.toUpperCase)
+      );
+    },
+  },
 };
 </script>

@@ -65,8 +65,8 @@ export default {
       return `fotos/${foto}`;
     },
     abrirDetalhe(id) {
-      this.store.selecionaProduto(id);
-      this.$router.push("/produtoDetalhe");
+      //this.store.selecionaProduto(id);
+      this.$router.push(`/produtoDetalhe/${id}`);
     },
   },
 };

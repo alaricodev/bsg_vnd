@@ -1,19 +1,18 @@
 <template>
   <div class="scroll-container q-pa-sm">
     <div class="scroll-content">
-      <!-- <q-chip
+      <q-chip
         v-for="item in filtro"
         :key="item"
         outline
-        :color="store.filtroSelecionado == item ? 'primary' : 'grey-6'"
-        text-color="grey-9"
-        class="bg-grey-3"
+        color="primary"
+        text-color="primary"
         clickable
         @click="selecionaItem(item)"
       >
         {{ item }}
-      </q-chip> -->
-      <q-badge
+      </q-chip>
+      <!-- <q-badge
         outline
         v-for="item in filtro"
         :key="item"
@@ -21,7 +20,7 @@
         color="primary"
         :label="item"
         @click="selecionaItem(item)"
-      />
+      /> -->
     </div>
   </div>
 </template>

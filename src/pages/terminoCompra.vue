@@ -28,5 +28,21 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "ErrorNotFound",
+  mounted() {
+    this.trackConversion();
+  },
+  methods: {
+    trackConversion() {
+      var google_conversion_id = "11118299420";
+      var google_conversion_label = "rq54CID04ZEYEJySz7Up";
+      var image = new Image(1, 1);
+      image.src =
+        "https://www.googleadservices.com/pagead/conversion/" +
+        google_conversion_id +
+        "/?label=" +
+        google_conversion_label +
+        "&script=0";
+    },
+  },
 });
 </script>

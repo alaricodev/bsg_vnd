@@ -42,8 +42,7 @@ export default {
   },
   methods: {
     acessaRota(id) {
-      this.store.selecionaProduto(id);
-      this.$router.push("/produtoDetalhe");
+      this.$router.push(`/produtoDetalhe/${id}`);
     },
     srcImg(nome) {
       return `fotos/${nome}`;

@@ -2,7 +2,12 @@
   <!-- Tela principal começa aqui -->
   <div v-if="store.totalItens == 0">
     <div class="flex flex-center">
-      <div class="row text-h5 text-primary">Carrinho Vazio</div>
+      <div
+        class="row text-h5 text-primary flex flex-center q-ma-xl"
+        style="width: 100%"
+      >
+        Carrinho Vazio
+      </div>
       <div class="row q-pa-md">
         <q-btn outline label="Voltar" color="primary" @click="backIndex()" />
       </div>
