@@ -4,6 +4,19 @@
     "categoria": "Pães",
     "idCat": 1,
     "iconeCat": "fa-thin fa-bread-loaf",
+    "foto": "012.jpeg",
+    "nome": "Pão Frances",
+    "preco": "12,90",
+    "peso": "90g",
+    "descricao": "Massa leve, sem glúten, sem leite e sem ovo. Igual ao pão de trigo da padaria. Pacote com 3 unidades.",
+    "descricaoLonga": "Uma massa leve e saborosa, especialmente formulada para atender às necessidades daqueles que seguem dietas sem glúten, sem leite. Com sua textura perfeita e aroma delicioso, esta alternativa é capaz de proporcionar a mesma experiência sensorial do pão de trigo fresquinho encontrado nas melhores padarias. Saiba o porquê do nosso pão francês ser tão famoso. Pacote com 3 unidades",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
+  },
+  {
+    "id": 2,
+    "categoria": "Pães",
+    "idCat": 1,
+    "iconeCat": "fa-thin fa-bread-loaf",
     "foto": "001.jpeg",
     "nome": "Pão de Abóbora",
     "preco": "26,90",
@@ -13,7 +26,7 @@
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
-    "id": 2,
+    "id": 3,
     "categoria": "Pães",
     "idCat": 1,
     "iconeCat": "fa-thin fa-bread-loaf",
@@ -26,7 +39,7 @@
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
-    "id": 3,
+    "id": 4,
     "categoria": "Pães",
     "idCat": 1,
     "iconeCat": "fa-thin fa-bread-loaf",
@@ -39,7 +52,7 @@
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
-    "id": 4,
+    "id": 5,
     "categoria": "Pães",
     "idCat": 1,
     "iconeCat": "fa-thin fa-bread-loaf",
@@ -52,7 +65,7 @@
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
-    "id": 5,
+    "id": 6,
     "categoria": "Pães",
     "idCat": 1,
     "iconeCat": "fa-thin fa-bread-loaf",
@@ -65,7 +78,7 @@
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
-    "id": 6,
+    "id": 7,
     "categoria": "Pães",
     "idCat": 1,
     "iconeCat": "fa-thin fa-bread-loaf",
@@ -78,7 +91,20 @@
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
-    "id": 7,
+    "id": 8,
+    "categoria": "Bolos",
+    "idCat": 2,
+    "iconeCat": "fa-light fa-cake-slice",
+    "foto": "013.jpeg",
+    "nome": "Brownie",
+    "preco": "11,90",
+    "peso": "100g",
+    "descricao": "Brownie sem glúten, sem leite, com chocolate 70% cacau. Parece um Petit Gateau.",
+    "descricaoLonga": "Apresentamos um irresistível brownie que vai encantar seu paladar. Feito com cuidado e dedicação, este brownie é livre de glúten e leite, e utiliza um delicioso chocolate com 70% de cacau, conferindo um sabor intenso e sofisticado. Com sua textura macia e cremosa, cada mordida desse brownie vai te transportar para a sensação indulgente de saborear um Petit Gateau de alta qualidade. Desfrute de um momento de prazer e delicie-se com esse brownie especial, perfeito para satisfazer seus desejos doces, mesmo com restrições alimentares.",
+    "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
+  },
+  {
+    "id": 9,
     "categoria": "Bolos",
     "idCat": 2,
     "iconeCat": "fa-light fa-cake-slice",
@@ -91,7 +117,7 @@
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
-    "id": 8,
+    "id": 10,
     "categoria": "Bolos",
     "idCat": 2,
     "iconeCat": "fa-light fa-cake-slice",
@@ -104,7 +130,7 @@
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
-    "id": 9,
+    "id": 11,
     "categoria": "Bolos",
     "idCat": 2,
     "foto": "009.jpeg",
@@ -117,7 +143,7 @@
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
-    "id": 10,
+    "id": 12,
     "categoria": "Rocambole",
     "idCat": 3,
     "iconeCat": "fa-light fa-pancakes",
@@ -130,7 +156,7 @@
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
   {
-    "id": 11,
+    "id": 13,
     "categoria": "Pães",
     "idCat": 1,
     "iconeCat": "fa-thin fa-bread-loaf",

@@ -1,6 +1,16 @@
 [
   {
+    "refId": 1,
+    "foto": "destaque_cod_012.png",
+    "caption": "Nosso delicioso pão"
+  },
+  {
     "refId": 8,
+    "foto": "destaque_cod_013.png",
+    "caption": "Nosso delicioso pão"
+  },
+  {
+    "refId": 9,
     "foto": "destaque_cod_01.png",
     "caption": "Nosso delicioso pão"
   },
