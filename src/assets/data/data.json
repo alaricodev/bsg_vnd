@@ -34,7 +34,7 @@
     "nome": "Pão de Hambúrguer",
     "preco": "14,90",
     "peso": "100g",
-    "descricao": "Massa leve, sem glúten, sem leite e sem ovo. Igual ao pão de trigo da padaria. Pacote com 3 unidades.",
+    "descricao": "Massa leve, sem glúten, sem leite e sem ovo. Igual ao pão de trigo da padaria. Pacote com 2 unidades.",
     "descricaoLonga": "Uma massa leve e saborosa, especialmente formulada para atender às necessidades daqueles que seguem dietas sem glúten, sem leite. Com sua textura perfeita e aroma delicioso, esta alternativa é capaz de proporcionar a mesma experiência sensorial do pão de trigo fresquinho encontrado nas melhores padarias. ",
     "sem_alergenicos": ["Glúten;-", "Lactose;-", "Açúcar Mascavo;+"]
   },
