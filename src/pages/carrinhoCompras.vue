@@ -115,8 +115,8 @@
       />
     </div>
     <div class="row text-overline q-ma-md">
-      A nossa entrega é feita em dias úteis. Os pedidos feitos até às 11:00
-      podem ser entregues no mesmo dia.
+      Pedidos realizados hoje serão programados para entrega no próximo dia útil
+      como data mínima de entrega.
     </div>
     <divisor-tela height="1rem" />
     <div class="q-ma-md">
@@ -223,7 +223,7 @@ export default {
       const tomorrow = new Date(today);
       tomorrow.setDate(today.getDate() + 1);
 
-      const isAfter11am = today.getHours() >= 11;
+      const isAfter11am = today.getHours() >= 1;
 
       // Se já passou das 11h, considera a data de amanhã como data inicial
       const startDate = isAfter11am ? tomorrow : today;
